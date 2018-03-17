@@ -39,9 +39,60 @@
           </li>
         </ul>
         <div class="main-nav__list user-list">
-          <a href="#">Поиск</a>
-          <a href="#">Вход</a>
-          <a href="#"><span class="visually-hidden">Корзина</span>Пусто</a>
+          <a class="user-list__link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <div class="user-list__item user-list__item--search">
+            <form class="user-list__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="user-search">Что ищем?</label>
+              <input class="user-list__input" id="user-search" type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </div>
+          <a class="user-list__link" href="#">
+            <span class="visually-hidden">Личный кабинет</span>Вход
+          </a>
+          <div class="user-list__item user-list__item--account">
+            <form class="user-list__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+              <input class="user-list__input" id="user-email" type="text" name="email" placeholder="Электронная почта">
+              <label class="visually-hidden" for="user-password">Ваш пароль:</label>
+              <input class="user-list__input" id="user-password" type="password" name="password" placeholder="Пароль">
+              <button class="user-list__button" type="submit">Войти</button>
+            </form>
+            <p class="user-list__restore">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </p>
+          </div>
+          <a class="user-list__link" href="#">
+            <span class="visually-hidden">Корзина</span>2 товара
+          </a>
+          <div class="user-list__item user-list__item--cart">
+            <table class="user-list__order">
+              <tr>
+                <td>
+                  <img src="img/ice-cream-1-small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                </td>
+                <td>
+                  <a href="#">Пломбир с апельсиновым джемом</a>
+                </td>
+                <td>1,5 кг х 200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/ice-cream-2-small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </td>
+                <td>
+                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                </td>
+                <td>1,5 кг х 300 руб.</td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <p>Итого: 750 руб.</p>
+            <button class="user-list__button" type="submit">Оформить заказ</button>
+          </div>
         </div>
       </nav>
       <div class="page-header__contacts">
@@ -67,10 +118,11 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Выбор параметров</h2>
-        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="filters__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filters__choice">
             <legend class="filters__title">Сортировка:</legend>
-            <select name="sort" size="4">
+            <label for="field-sort"></label>
+            <select id="field-sort" name="sort" size="4">
               <option class="filters__option">по популярности</option>
               <option class="filters__option">сначала недорогие</option>
               <option class="filters__option">сначала дорогие</option>
@@ -139,6 +191,7 @@
             </a>
             <p>310₽/кг</p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -146,6 +199,7 @@
             </a>
             <p>380₽/кг</p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -153,6 +207,7 @@
             </a>
             <p>355₽/кг</p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -160,6 +215,7 @@
             </a>
             <p>415₽/кг</p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -167,6 +223,7 @@
             </a>
             <p>325₽/кг</p>
             <a href="#">Сливочное с брусничным джемом</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -174,6 +231,7 @@
             </a>
             <p>410₽/кг</p>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -181,6 +239,7 @@
             </a>
             <p>375₽/кг</p>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -188,6 +247,7 @@
             </a>
             <p>320₽/кг</p>
             <a href="#">Сливочное с шоколадной стружкой</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -195,6 +255,7 @@
             </a>
             <p>440₽/кг</p>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -202,6 +263,7 @@
             </a>
             <p>435₽/кг</p>
             <a href="#">Сливочноe с ментоловым сиропом</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -209,6 +271,7 @@
             </a>
             <p>355₽/кг</p>
             <a href="#">Сливочное с кусочками черного шоколада</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item">
             <a href="#">
@@ -216,6 +279,7 @@
             </a>
             <p>420₽/кг</p>
             <a href="#">Сливочное с мятным сиропом</a>
+            <a href="#">Быстрый просмотр</a>
           </li>
         </ul>
 
@@ -292,13 +356,26 @@
           </li>
         </ul>
       </nav>
-      <section class="page-footer__copyright">
+      <div class="page-footer__copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy">
         </a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2017</p>
-      </section>
+      </div>
     </footer>
+
+    <section class="modal-feedback">
+      <h2 class="modal-feedback__title">Мы обязательно вам ответим!</h2>
+      <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="feedback-username">Ваше имя:</label>
+        <input class="modal-feedback__input" id="feedback-username" type="text" name="username" placeholder="Как вас зовут?">
+        <label class="visually-hidden" for="feedback-email">Ваш e-mail:</label>
+        <input class="modal-feedback__input" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа">
+        <label class="visually-hidden" for="feedback-message">Текст письма:</label>
+        <textarea class="modal-feedback__message" id="feedback-message" name="message">Напишите что-нибудь...</textarea>
+        <button class="modal-feedback__button" type="submit">Отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>
