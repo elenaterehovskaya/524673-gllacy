@@ -8,6 +8,8 @@ body {
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
+
+  background-color: #849d8f;
 }
 
 a {
@@ -372,13 +374,14 @@ input[type="radio"].visually-hidden {
 
 .hits {
   width: 1146px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   padding: 0 27px;
 }
 
-.hits__list {
+.catalog__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -387,13 +390,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.hits__item {
+.catalog__item {
   position: relative;
 
   width: 267px;
+  margin-bottom: 40px;
 }
 
-.hits__item::before {
+.catalog__item--hits::before {
   content: "";
   position: absolute;
   top: 0;
@@ -405,14 +409,14 @@ input[type="radio"].visually-hidden {
   background: url("../img/hit.svg") no-repeat 0 0;
 }
 
-.hits__image {
+.catalog__image {
   display: block;
   margin-bottom: 15px;
 
   border-radius: 50%;
 }
 
-.hits__price {
+.catalog__price {
   position: absolute;
   top: 215px;
 
@@ -424,14 +428,18 @@ input[type="radio"].visually-hidden {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.hits__price span{
+.catalog__price span{
   font-size: 30px;
 }
 
-.hits__name {
+.catalog__name {
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.catalog__button {
+  display: none;
 }
 
 .about-us {
@@ -647,6 +655,59 @@ input[type="radio"].visually-hidden {
 .contacts__button {
   box-sizing: inherit;
   width: 100%;
+}
+
+.page-catalog {
+  width: 1146px;
+  margin: 0 auto 40px;
+  padding: 0 27px;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs_link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.page-catalog__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+
+
+
+
+
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination__link {
+  display: block;
+  margin: 0 5px;
+  padding: 5px;
+
+  color: #ffffff;
 }
 
 .page-footer {
