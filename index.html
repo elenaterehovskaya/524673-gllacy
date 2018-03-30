@@ -13,11 +13,11 @@
   <input class="visually-hidden slide__input--radio-3" type="radio" id="promo-3" name="toggle">
     <div class="site-wrapper">
       <header class="page-header">
-        <nav class="main-nav">
-          <a class="main-nav__logo" href="#">
+        <nav class="page-header__nav">
+          <a class="page-header__logo">
             <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип «Gllacy Shop»">
           </a>
-          <ul class="main-nav__list site-list">
+          <ul class="page-header__list site-list">
             <li>
               <a class="site-list__link" href="#">Каталог</a>
               <ul class="site-list__catalog">
@@ -45,40 +45,40 @@
               <a class="site-list__link" href="#">О Компании</a>
             </li>
           </ul>
-          <div class="main-nav__list user-list">
-            <a class="user-list__link user-list__link--search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-            <div class="user-list__item user-list__item--search">
-              <form class="user-list__form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="user-search">Что ищем?</label>
-                <input class="user-list__input" id="user-search" type="text" name="search" placeholder="Что ищем?">
-              </form>
-            </div>
-            <a class="user-list__link user-list__link--account" href="#">
-              <span class="visually-hidden">Личный кабинет</span>Вход
-            </a>
-            <div class="user-list__item user-list__item--account">
-              <form class="user-list__form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
-                <input class="user-list__input" id="user-email" type="text" name="email" placeholder="Электронная почта">
-                <label class="visually-hidden" for="user-password">Ваш пароль:</label>
-                <input class="user-list__input" id="user-password" type="password" name="password" placeholder="Пароль">
-                <button class="user-list__button button" type="submit">Войти</button>
-              </form>
-              <p class="user-list__restore">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </p>
-            </div>
-            <a class="user-list__link user-list__link--basket" href="#">
-              <span class="visually-hidden">Корзина</span>Пусто
-            </a>
-          </div>
         </nav>
-        <div class="page-header__contacts">
-          <p>С 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
+        <div class="page-header__item user-list">
+          <a class="user-list__link user-list__link--search" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <div class="user-list__item user-list__item--search">
+            <form class="user-list__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="user-search">Что ищем?</label>
+              <input class="user-list__input" id="user-search" type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </div>
+          <a class="user-list__link user-list__link--account" href="#">
+            <span class="visually-hidden">Личный кабинет</span>Вход
+          </a>
+          <div class="user-list__item user-list__item--account">
+            <form class="user-list__form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+              <input class="user-list__input" id="user-email" type="text" name="email" placeholder="Электронная почта">
+              <label class="visually-hidden" for="user-password">Ваш пароль:</label>
+              <input class="user-list__input" id="user-password" type="password" name="password" placeholder="Пароль">
+              <button class="user-list__button button" type="submit">Войти</button>
+            </form>
+            <p class="user-list__restore">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </p>
+          </div>
+          <a class="user-list__link user-list__link--basket-empty" href="#">
+            <span class="visually-hidden">Корзина</span>Пусто
+          </a>
+          <div class="user-list__contacts">
+            <p>С 10 до 20, ежедневно</p>
+            <p>8 812 450-25-25</p>
+          </div>
         </div>
       </header>
 
@@ -98,7 +98,7 @@
               <a class="slider__button button" href="#">Давайте оба!</a>
             </li>
             <li class="slider__item slider__item--promo-2">
-              <h3 class="slider__title">Шоколадный пломбир и&#160;лимонный сорбет </h3>
+              <h3 class="slider__title">Шоколадный пломбир и&#160;лимонный сорбет</h3>
               <a class="slider__button button" href="#">Давайте оба!</a>
             </li>
             <li class="slider__item slider__item--promo-3">
@@ -124,43 +124,45 @@
           </ul>
         </section>
 
-        <section class="hits catalog">
+        <div class="catalog">
           <h2 class="visually-hidden">Наши хиты</h2>
-          <ul class="catalog__list">
-            <li class="catalog__item catalog__item--hits">
-              <a href="#">
-                <img class="catalog__image" src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              </a>
-              <p class="catalog__price">310 &#8381;<span>/кг</span></p>
-              <a class="catalog__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              <a class="catalog__button button" href="#">Быстрый просмотр</a>
-            </li>
-            <li class="catalog__item catalog__item--hits">
-              <a href="#">
-                <img class="catalog__image" src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-              </a>
-              <p class="catalog__price">380 &#8381;<span>/кг</span></p>
-              <a class="catalog__name" href="#">Сливочно-кофейное с кусочками шоколада</a>
-              <a class="catalog__button button" href="#">Быстрый просмотр</a>
-            </li>
-            <li class="catalog__item catalog__item--hits">
-              <a href="#">
-                <img class="catalog__image" src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              </a>
-              <p class="catalog__price">355 &#8381;<span>/кг</span></p>
-              <a class="catalog__name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              <a class="catalog__button button" href="#">Быстрый просмотр</a>
-            </li>
-            <li class="catalog__item catalog__item--hits">
-              <a href="#">
-                <img class="catalog__image" src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              </a>
-              <p class="catalog__price">415 &#8381;<span>/кг</span></p>
-              <a class="catalog__name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-              <a class="catalog__button button" href="#">Быстрый просмотр</a>
-            </li>
-          </ul>
-        </section>
+          <article class="catalog__item">
+            <h3 class="visually-hidden">Сливочное с апельсиновым джемом</h3>
+            <a class="catalog__link catalog__link--hits" href="#">
+              <img class="catalog__image" src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </a>
+            <p class="catalog__price">310 &#8381;<span>/кг</span></p>
+            <a class="catalog__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="catalog__button button" href="#">Быстрый просмотр</a>
+          </article>
+          <article class="catalog__item">
+            <h3 class="visually-hidden">Сливочно-кофейное</h3>
+            <a class="catalog__link catalog__link--hits" href="#">
+              <img class="catalog__image" src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            </a>
+            <p class="catalog__price">380 &#8381;<span>/кг</span></p>
+            <a class="catalog__name" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="catalog__button button" href="#">Быстрый просмотр</a>
+          </article>
+          <article class="catalog__item">
+            <h3 class="visually-hidden">Сливочно-клубничное</h3>
+            <a class="catalog__link catalog__link--hits" href="#">
+              <img class="catalog__image" src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </a>
+            <p class="catalog__price">355 &#8381;<span>/кг</span></p>
+            <a class="catalog__name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="catalog__button button" href="#">Быстрый просмотр</a>
+          </article>
+          <article class="catalog__item">
+            <h3 class="visually-hidden">Сливочное крем-брюле</h3>
+            <a class="catalog__link catalog__link--hits" href="#">
+              <img class="catalog__image" src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            </a>
+            <p class="catalog__price">415 &#8381;<span>/кг</span></p>
+            <a class="catalog__name" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="catalog__button button" href="#">Быстрый просмотр</a>
+          </article>
+        </div>
 
         <section class="about-us">
           <h2 class="visually-hidden">О нас</h2>
@@ -177,7 +179,7 @@
           <h2 class="visually-hidden">Новости</h2>
           <div class="news__item news__item--blog">
             <h3 class="news__title">Новое в нашем блоге</h3>
-            <a class="news__anons">10 способов сервировки фруктовых щербетов к столу</a>
+            <a class="news__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="news__item news__item--mailing">
             <div class="news__item-fon">
@@ -196,7 +198,7 @@
           <div class="contacts__info">
             <p class="contacts__address">Адрес главного офиса<br> и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
             <p class="contacts__phone">Для заказов по телефону: <span>8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
-            <a class="contacts__button button" href="#">Форма обратной связи</a>
+            <a class="contacts__button button" href="feedback.html">Форма обратной связи</a>
           </div>
         </section>
       </main>
