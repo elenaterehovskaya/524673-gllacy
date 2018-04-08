@@ -132,9 +132,8 @@
         </section>
 
         <div class="catalog">
-          <h2 class="visually-hidden">Наши хиты</h2>
           <article class="catalog__item">
-            <h3 class="visually-hidden">Сливочное с апельсиновым джемом</h3>
+            <h3 class="visually-hidden">Наш хит: Сливочное с апельсиновым джемом</h3>
             <a class="catalog__link catalog__link--hits" href="#">
               <img class="catalog__image" src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
@@ -143,7 +142,7 @@
             <a class="catalog__button button" href="#">Быстрый просмотр</a>
           </article>
           <article class="catalog__item">
-            <h3 class="visually-hidden">Сливочно-кофейное</h3>
+            <h3 class="visually-hidden">Наш хит: Сливочно-кофейное</h3>
             <a class="catalog__link catalog__link--hits" href="#">
               <img class="catalog__image" src="img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </a>
@@ -152,7 +151,7 @@
             <a class="catalog__button button" href="#">Быстрый просмотр</a>
           </article>
           <article class="catalog__item">
-            <h3 class="visually-hidden">Сливочно-клубничное</h3>
+            <h3 class="visually-hidden">Наш хит: Сливочно-клубничное</h3>
             <a class="catalog__link catalog__link--hits" href="#">
               <img class="catalog__image" src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
@@ -161,7 +160,7 @@
             <a class="catalog__button button" href="#">Быстрый просмотр</a>
           </article>
           <article class="catalog__item">
-            <h3 class="visually-hidden">Сливочное крем-брюле</h3>
+            <h3 class="visually-hidden">Наш хит: Сливочное крем-брюле</h3>
             <a class="catalog__link catalog__link--hits" href="#">
               <img class="catalog__image" src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             </a>
@@ -182,22 +181,21 @@
           </ul>
         </section>
 
-        <article class="news">
-          <h2 class="visually-hidden">Новости</h2>
-          <div class="news__item news__item--blog">
-            <h3 class="news__title">Новое в нашем блоге</h3>
-            <a class="news__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-          </div>
-          <div class="news__item news__item--mailing">
-            <h3 class="visually-hidden">Полезная рассылка</h3>
-            <p class="news__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <div class="news-wrapper">
+          <article class="news-blog">
+            <h2 class="news-blog__title">Новое в нашем блоге</h2>
+            <a class="news-blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </article>
+          <section class="news-subscribe">
+            <h2 class="visually-hidden">Полезная рассылка</h2>
+            <p class="news-subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label for="news-email"></label>
-              <input class="news__input" id="news-email" type="email" name="email" placeholder="Электронная почта" required>
-              <button class="news__button button" type="submit">Отправить</button>
+              <input class="news-subscribe__input" id="news-email" type="email" name="email" placeholder="Электронная почта" required>
+              <button class="news-subscribe__button button" type="submit">Отправить</button>
             </form>
-          </div>
-        </article>
+          </section>
+        </div>
 
         <section class="contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
