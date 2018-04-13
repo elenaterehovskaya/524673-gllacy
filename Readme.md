@@ -1,13 +1,13 @@
 # Проект «Глейси»
 
-* Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya).
-* Макет: [HTML Academy](https://htmlacademy.ru).
-
----
+Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya).
+Макет: [HTML Academy](https://htmlacademy.ru).
 
 #### Главная страница <a href="https://elenaterehovskaya.github.io/gllacy" target="_blank">https://elenaterehovskaya.github.io/gllacy</a>
 
 #### страница «Магазина» <a href="https://elenaterehovskaya.github.io/gllacy/catalog.html" target="_blank">https://elenaterehovskaya.github.io/gllacy/catalog.html</a>
+
+---
 
 <table>
    <tr valign="top">
