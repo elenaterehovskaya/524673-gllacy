@@ -1,4 +1,4 @@
-# Проект «Глейси»
+# `Проект «Глейси»`
 
 Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya)  
 Макет: [HTML Academy](https://htmlacademy.ru)
@@ -9,7 +9,7 @@
 
 ---
 
-<p align="top">
+<p vertical-align="top">
   <img src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-index-1200.jpg" width="300" alt="Главная страница">
   <img src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-catalog-1200.jpg" width="300" alt="Страница «Магазина»">
 </p>
