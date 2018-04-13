@@ -1,7 +1,7 @@
 # Проект «Глейси»
 
-##### Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya).
-##### Макет: [HTML Academy](https://htmlacademy.ru).
+Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya).  
+Макет: [HTML Academy](https://htmlacademy.ru).
 
 #### Главная страница <a href="https://elenaterehovskaya.github.io/gllacy" target="_blank">https://elenaterehovskaya.github.io/gllacy</a>
 
@@ -9,7 +9,7 @@
 
 ---
 
-<table>
+<table vertical-align="top">
    <tr>
      <td>
        <a href="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-index-1200.jpg" target="_blank">
