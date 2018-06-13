@@ -3,17 +3,25 @@
 * Вёрстка: [Елена Тереховская](https://github.com/elenaterehovskaya).
 * Макет: [HTML Academy](https://htmlacademy.ru).
 
----
+## Описание
 
-#### Главная страница <a href="https://elenaterehovskaya.github.io/gllacy" target="_blank">https://elenaterehovskaya.github.io/gllacy</a>
+* Используемые технологии: _HTML, CSS, JS_.
+* Используемая методология: _БЭМ_.
+* Используемые фреймворки: _нет_.
 
-#### страница «Магазина» <a href="https://elenaterehovskaya.github.io/gllacy/catalog.html" target="_blank">https://elenaterehovskaya.github.io/gllacy/catalog.html</a>
+## Ссылки
+
+#### Главная страница: <a href="https://elenaterehovskaya.github.io/gllacy" target="_blank">https://elenaterehovskaya.github.io/gllacy</a>
+
+#### страница «Магазина»: <a href="https://elenaterehovskaya.github.io/gllacy/catalog.html" target="_blank">https://elenaterehovskaya.github.io/gllacy/catalog.html</a>
 
 ####
 
+---
+
 <p>
-  <img width="300" alt="Главная страница «Глейси»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-index-1200.jpg">
-  <img valign="top" width="300" alt="Страница «Магазина»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-catalog-1200.jpg">
+  <img width="320" alt="Главная страница «Глейси»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-index-1200.jpg">
+  <img valign="top" width="320" alt="Страница «Магазина»" src="https://github.com/elenaterehovskaya/elenaterehovskaya.github.io/blob/master/img/gllacy-catalog-1200.jpg">
 </p>
 
 ---
